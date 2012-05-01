@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharperGPS", "SharperGPS\SharperGPS.csproj", "{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharperGps_Demo_WinForms", "Demo_WinForms\SharperGps_Demo_WinForms.csproj", "{58046503-369B-49B3-B9B3-D50144F7A368}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Debug PocketPC|Any CPU = Debug PocketPC|Any CPU
+		x86 Release|Any CPU = x86 Release|Any CPU
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Debug PocketPC|x86 = Debug PocketPC|x86
+		x86 Release|x86 = x86 Release|x86
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+		Debug PocketPC|x64 = Debug PocketPC|x64
+		x86 Release|x64 = x86 Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug PocketPC|Any CPU.ActiveCfg = Debug PocketPC|Any CPU
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug PocketPC|Any CPU.Build.0 = Debug PocketPC|Any CPU
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug PocketPC|x64.ActiveCfg = Debug PocketPC|x64
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug PocketPC|x64.Build.0 = Debug PocketPC|x64
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug PocketPC|x86.ActiveCfg = Debug PocketPC|x86
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug PocketPC|x86.Build.0 = Debug PocketPC|x86
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug|x64.ActiveCfg = Debug|x64
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug|x64.Build.0 = Debug|x64
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug|x86.ActiveCfg = Debug|x86
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Debug|x86.Build.0 = Debug|x86
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Release|x64.ActiveCfg = Release|x64
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Release|x64.Build.0 = Release|x64
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Release|x86.ActiveCfg = Release|x86
+		{58046503-369B-49B3-B9B3-D50144F7A368}.Release|x86.Build.0 = Release|x86
+		{58046503-369B-49B3-B9B3-D50144F7A368}.x86 Release|Any CPU.ActiveCfg = x86 Release|Any CPU
+		{58046503-369B-49B3-B9B3-D50144F7A368}.x86 Release|Any CPU.Build.0 = x86 Release|Any CPU
+		{58046503-369B-49B3-B9B3-D50144F7A368}.x86 Release|x64.ActiveCfg = x86 Release|x64
+		{58046503-369B-49B3-B9B3-D50144F7A368}.x86 Release|x64.Build.0 = x86 Release|x64
+		{58046503-369B-49B3-B9B3-D50144F7A368}.x86 Release|x86.ActiveCfg = x86 Release|x86
+		{58046503-369B-49B3-B9B3-D50144F7A368}.x86 Release|x86.Build.0 = x86 Release|x86
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug PocketPC|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug PocketPC|Any CPU.Build.0 = Debug|Any CPU
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug PocketPC|x64.ActiveCfg = Debug|x64
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug PocketPC|x64.Build.0 = Debug|x64
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug PocketPC|x86.ActiveCfg = Debug|x86
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug PocketPC|x86.Build.0 = Debug|x86
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug|x64.ActiveCfg = Debug|x64
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug|x64.Build.0 = Debug|x64
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug|x86.ActiveCfg = Debug|x86
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Debug|x86.Build.0 = Debug|x86
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Release|x64.ActiveCfg = Release|x64
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Release|x64.Build.0 = Release|x64
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Release|x86.ActiveCfg = Release|x86
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.Release|x86.Build.0 = Release|x86
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.x86 Release|Any CPU.ActiveCfg = x86 Release|Any CPU
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.x86 Release|Any CPU.Build.0 = x86 Release|Any CPU
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.x86 Release|x64.ActiveCfg = x86 Release|x64
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.x86 Release|x64.Build.0 = x86 Release|x64
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.x86 Release|x86.ActiveCfg = x86 Release|x86
+		{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}.x86 Release|x86.Build.0 = x86 Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SharperGPS\SharperGPS.csproj
+	EndGlobalSection
+EndGlobal
