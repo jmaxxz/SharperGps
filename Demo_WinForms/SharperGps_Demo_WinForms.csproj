@@ -149,7 +149,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -223,4 +222,10 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <ItemGroup>
+    <ProjectReference Include="..\SharperGPS\SharperGPS.csproj">
+      <Project>{F9DC1440-788D-4BBB-9AC5-02EB7EFA019B}</Project>
+      <Name>SharperGPS</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

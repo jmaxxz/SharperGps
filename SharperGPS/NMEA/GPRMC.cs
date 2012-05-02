@@ -95,9 +95,9 @@ namespace Ares.SharperGps.NMEA
                 _position = new Coordinate(	GpsHandler.GPSToDecimalDegrees(split[5], split[6]),
                                            	GpsHandler.GPSToDecimalDegrees(split[3], split[4]));
 
-                GpsHandler.DblTryParse(split[7], out _speed);
-                GpsHandler.DblTryParse(split[8], out _course);
-                GpsHandler.DblTryParse(split[10], out _magneticVariation);
+                double.TryParse(split[7], out _speed);
+                double.TryParse(split[8], out _course);
+                double.TryParse(split[10], out _magneticVariation);
             }
             catch { }
         }

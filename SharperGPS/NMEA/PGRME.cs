@@ -47,14 +47,13 @@ namespace Ares.SharperGps.NMEA
             {
                 //Split into an array of strings.
                 string[] split = nmeaSentence.Split(new[] { ',' });
-                GpsHandler.DblTryParse(split[1], out _estHorisontalError);
-                GpsHandler.DblTryParse(split[3], out _estVerticalError);
-                GpsHandler.DblTryParse(split[5], out _estSphericalError);
+                double.TryParse(split[1], out _estHorisontalError);
+                double.TryParse(split[3], out _estVerticalError);
+                double.TryParse(split[5], out _estSphericalError);
             }
             catch { }
         }
 
-        #region Properties
 
         private readonly double _estHorisontalError;
         private readonly double _estVerticalError;
@@ -86,6 +85,5 @@ namespace Ares.SharperGps.NMEA
             get { return _estSphericalError; }
             //set { _estSphericalError = value; }
         }
-        #endregion
     }
 }

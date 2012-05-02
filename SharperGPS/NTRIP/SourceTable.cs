@@ -220,9 +220,8 @@ namespace Ares.SharperGps.NTRIP
                                            NMEA = (strData[5] == "1"),
                                            Country = strData[6]
                                        };
-                //data.Host = new System.Net.IPEndPoint(System.Net.IPAddress.Parse(strData[1]),int.Parse(strData[2]));
-                GpsHandler.DblTryParse(strData[7], out data.Latitude);
-                GpsHandler.DblTryParse(strData[8], out data.Longitude);
+                double.TryParse(strData[7], out data.Latitude);
+                double.TryParse(strData[8], out data.Longitude);
                 if(strData.Length>9)
                     data.FallbackHost = strData[9];
                 return data;

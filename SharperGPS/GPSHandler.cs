@@ -466,46 +466,6 @@ namespace Ares.SharperGps
             }
         }
 
-        /// <summary>
-        /// Internal class for parsing doubles. This replaces the Double.TryParse() method that isn't supported by CF.
-        /// </summary>
-        /// <remarks>Uses EN-us format for parsing doubles</remarks>
-        /// <param name="str">string to parse</param>
-        /// <param name="result">Output result. 0 if parse failed</param>
-        /// <returns>true if parse was succesfull</returns>
-        internal static bool DblTryParse(string str, out double result)
-        {
-            try
-            {
-                result = double.Parse(str, NumberFormatEnUs);
-                return true;
-            }
-            catch
-            {
-                result = 0;
-                return false;
-            }
-        }
-
-        internal static bool IntTryParse(string str, out int result)
-        {
-            try
-            {
-                result = int.Parse(str, NumberFormatEnUs);
-                return true;
-            }
-            catch
-            {
-                result = 0;
-                return false;
-            }
-        }
-        internal static int IntTryParse(string str)
-        {
-            try { return int.Parse(str, NumberFormatEnUs); }
-            catch { return 0; }
-        }
-
 
 
         internal class NMEAEmulator : IDisposable

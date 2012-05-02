@@ -85,16 +85,13 @@ namespace Ares.SharperGps.NMEA
                 for (int i = 0; i <= 11; i++)
                     if(split[i + 3]!="")
                         _prnInSolution.Add(split[i + 3]);
-                GpsHandler.DblTryParse(split[15], out _pdop);
-                GpsHandler.DblTryParse(split[16], out _hdop);
-                GpsHandler.DblTryParse(split[17], out _vdop);
+                double.TryParse(split[15], out _pdop);
+                double.TryParse(split[16], out _hdop);
+                double.TryParse(split[17], out _vdop);
             }
             catch { }
         }
 
-
-
-        #region Properties
 
         private readonly char _mode;
         private readonly GSAFixModeEnum _fixMode;
@@ -150,6 +147,5 @@ namespace Ares.SharperGps.NMEA
         {
             get { return _vdop; }
         }
-        #endregion
     }
 }

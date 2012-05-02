@@ -52,8 +52,16 @@ namespace Ares.SharperGps.NMEA
                 string[] split = nmeaSentence.Split(new[] { ',' });
                 if (split[1].Length >= 6)
                 {
-                    TimeSpan t = new TimeSpan(GpsHandler.IntTryParse(split[1].Substring(0, 2)),
-                                              GpsHandler.IntTryParse(split[1].Substring(2, 2)), GpsHandler.IntTryParse(split[1].Substring(4, 2)));
+                    var hrs = 0;
+                    var min = 0;
+                    var sec= 0;
+
+                    int.TryParse(split[1].Substring(0, 2), out hrs);
+                    int.TryParse(split[1].Substring(2, 2), out min);
+                    int.TryParse(split[1].Substring(4, 2), out sec);
+
+
+                    TimeSpan t = new TimeSpan(hrs,min, sec);
                     DateTime nowutc = DateTime.UtcNow;
                     nowutc = nowutc.Add(-nowutc.TimeOfDay);
                     _timeOfFix = nowutc.Add(t);
@@ -69,11 +77,11 @@ namespace Ares.SharperGps.NMEA
                 else
                     FixQuality = FixQualityEnum.Invalid;
                 _noOfSats = Convert.ToByte(split[7]);
-                GpsHandler.DblTryParse(split[8], out _dilution);
-                GpsHandler.DblTryParse(split[9], out _altitude);
+                double.TryParse(split[8], out _dilution);
+                double.TryParse(split[9], out _altitude);
                 _altitudeUnits = split[10][0];
-                GpsHandler.DblTryParse(split[11], out _heightOfGeoid);
-                GpsHandler.IntTryParse(split[13], out _dGPSUpdate);
+                double.TryParse(split[11], out _heightOfGeoid);
+                int.TryParse(split[13], out _dGPSUpdate);
                 _dGPSStationID = split[14];
             }
             catch { }

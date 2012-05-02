@@ -53,10 +53,16 @@ namespace Ares.SharperGps.NMEA
             try
             {
                 //Split into an array of strings.
-                string[] split = nmeaSentence.Split(new[] { ',' });
-                int satsInView = GpsHandler.IntTryParse(split[3]);
-                int msgCount =  GpsHandler.IntTryParse(split[1]); //Number of GPGSV messages
-                int msgno =  GpsHandler.IntTryParse(split[2]); //Current messagenumber
+                string[] split = nmeaSentence.Split(',');
+
+                int satsInView = 0;
+                int.TryParse(split[3], out satsInView);
+
+                int msgCount =  0;
+                int.TryParse(split[1], out msgCount); //Number of GPGSV messages
+
+                int msgno =  0;
+                int.TryParse(split[2], out msgno); //Current messagenumber
 
                 if (msgCount < msgno || msgno < 1) //check for invalid data (could be zero if parse failed)
                     return false;
